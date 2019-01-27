@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C8D41AE21FE2D650022D064 /* nightStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D41A921FE26400022D064 /* nightStyle.json */; };
+		2C8D41B021FE30A90022D064 /* defaultStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D41AF21FE30A90022D064 /* defaultStyle.json */; };
+		2C8D41B221FE41BA0022D064 /* AutoCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D41B121FE41BA0022D064 /* AutoCompletion.swift */; };
 		6667FB0E9F12BD6F58A9C921 /* Pods_Plan42.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76565E8024EC0AA30B064EC7 /* Pods_Plan42.framework */; };
 		8ED92CA821FC4B3B00646AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED92CA721FC4B3B00646AB0 /* AppDelegate.swift */; };
 		8ED92CAA21FC4B3B00646AB0 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED92CA921FC4B3B00646AB0 /* MapVC.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C8D41A921FE26400022D064 /* nightStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nightStyle.json; sourceTree = "<group>"; };
+		2C8D41AF21FE30A90022D064 /* defaultStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = defaultStyle.json; sourceTree = "<group>"; };
+		2C8D41B121FE41BA0022D064 /* AutoCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompletion.swift; sourceTree = "<group>"; };
 		60B50E0ACA909679FC4231C5 /* Pods-Plan42.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plan42.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plan42/Pods-Plan42.release.xcconfig"; sourceTree = "<group>"; };
 		76565E8024EC0AA30B064EC7 /* Pods_Plan42.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plan42.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED92CA421FC4B3B00646AB0 /* Plan42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plan42.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8D41AD21FE2AA00022D064 /* styles JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2C8D41A921FE26400022D064 /* nightStyle.json */,
+				2C8D41AF21FE30A90022D064 /* defaultStyle.json */,
+			);
+			name = "styles JSON";
+			sourceTree = "<group>";
+		};
 		8ED92C9B21FC4B3B00646AB0 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +76,10 @@
 		8ED92CA621FC4B3B00646AB0 /* Plan42 */ = {
 			isa = PBXGroup;
 			children = (
+				2C8D41AD21FE2AA00022D064 /* styles JSON */,
 				8ED92CA721FC4B3B00646AB0 /* AppDelegate.swift */,
 				8ED92CA921FC4B3B00646AB0 /* MapVC.swift */,
+				2C8D41B121FE41BA0022D064 /* AutoCompletion.swift */,
 				8ED92CAB21FC4B3B00646AB0 /* Main.storyboard */,
 				8ED92CAE21FC4B3B00646AB0 /* Assets.xcassets */,
 				8ED92CB021FC4B3B00646AB0 /* LaunchScreen.storyboard */,
@@ -152,7 +169,9 @@
 			files = (
 				8ED92CB221FC4B3B00646AB0 /* LaunchScreen.storyboard in Resources */,
 				8ED92CAF21FC4B3B00646AB0 /* Assets.xcassets in Resources */,
+				2C8D41AE21FE2D650022D064 /* nightStyle.json in Resources */,
 				8ED92CAD21FC4B3B00646AB0 /* Main.storyboard in Resources */,
+				2C8D41B021FE30A90022D064 /* defaultStyle.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8D41B221FE41BA0022D064 /* AutoCompletion.swift in Sources */,
 				8ED92CAA21FC4B3B00646AB0 /* MapVC.swift in Sources */,
 				8ED92CA821FC4B3B00646AB0 /* AppDelegate.swift in Sources */,
 			);

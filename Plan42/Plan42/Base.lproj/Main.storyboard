@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gF9-yj-fPZ" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dj0-Nx-jjF">
@@ -41,36 +41,54 @@
                                     <action selector="chooseStart:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Q0t-dc-6LA"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fA-n8-gMi">
-                                <rect key="frame" x="321" y="577" width="38" height="30"/>
-                                <state key="normal" title="Show"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjE-wG-OJ3">
+                                <rect key="frame" x="309" y="537" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="daN-KX-UC4"/>
+                                    <constraint firstAttribute="width" constant="55" id="eja-St-k4h"/>
+                                </constraints>
+                                <state key="normal" image="goBtn"/>
                                 <connections>
-                                    <action selector="showPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ro-e0-1rn"/>
+                                    <action selector="showPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OtH-EN-OCK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQd-mW-NmY">
+                                <rect key="frame" x="309" y="472" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="3Lc-5a-vRS"/>
+                                    <constraint firstAttribute="width" constant="55" id="AX2-6y-50r"/>
+                                </constraints>
+                                <state key="normal" image="moon5"/>
+                                <connections>
+                                    <action selector="changeMapStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgk-KY-Dq6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dj0-Nx-jjF" firstAttribute="top" secondItem="hIj-yH-h55" secondAttribute="bottom" constant="16" id="1Kj-7G-2Tw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OjE-wG-OJ3" secondAttribute="bottom" constant="75" id="1ao-TW-n83"/>
                             <constraint firstItem="hIj-yH-h55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="7e6-1S-JSM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AQd-mW-NmY" secondAttribute="bottom" constant="140" id="8Oe-Ow-Uc6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dj0-Nx-jjF" secondAttribute="trailing" constant="32" id="8dB-Fl-set"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8fA-n8-gMi" secondAttribute="bottom" constant="60" id="Fot-c8-bTj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQd-mW-NmY" secondAttribute="trailing" constant="11" id="9kr-aN-Rc9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hIj-yH-h55" secondAttribute="trailing" constant="32" id="GV3-h7-ZqM"/>
+                            <constraint firstItem="gF9-yj-fPZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KR9-Qo-gBr"/>
                             <constraint firstItem="Dj0-Nx-jjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Oqx-p3-Lcd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gF9-yj-fPZ" secondAttribute="bottom" id="WPX-j3-sXR"/>
-                            <constraint firstItem="gF9-yj-fPZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZYu-0k-Bud"/>
+                            <constraint firstAttribute="bottom" secondItem="gF9-yj-fPZ" secondAttribute="bottom" id="WPX-j3-sXR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OjE-wG-OJ3" secondAttribute="trailing" constant="11" id="e27-96-Me9"/>
                             <constraint firstItem="hIj-yH-h55" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="pWr-dK-zRW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fA-n8-gMi" secondAttribute="trailing" constant="16" id="pzP-KH-4Vd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dj0-Nx-jjF" secondAttribute="trailing" constant="32" id="seU-CH-mgY"/>
-                            <constraint firstItem="gF9-yj-fPZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vfg-7N-eOq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gF9-yj-fPZ" secondAttribute="trailing" id="wEA-qR-lIU"/>
+                            <constraint firstItem="gF9-yj-fPZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vfg-7N-eOq"/>
+                            <constraint firstAttribute="trailing" secondItem="gF9-yj-fPZ" secondAttribute="trailing" id="wEA-qR-lIU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="destination" destination="Dj0-Nx-jjF" id="gHu-do-alD"/>
                         <outlet property="mapView" destination="gF9-yj-fPZ" id="wN5-c6-I2o"/>
-                        <outlet property="showPath" destination="8fA-n8-gMi" id="WmI-oJ-hKq"/>
+                        <outlet property="nightMode" destination="AQd-mW-NmY" id="FRK-Uv-7mU"/>
+                        <outlet property="showPath" destination="OjE-wG-OJ3" id="bGP-IP-5yl"/>
                         <outlet property="start" destination="hIj-yH-h55" id="Plk-ML-FDz"/>
                     </connections>
                 </viewController>
@@ -79,4 +97,8 @@
             <point key="canvasLocation" x="364" y="31.934032983508249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="goBtn" width="100" height="100"/>
+        <image name="moon5" width="100" height="100"/>
+    </resources>
 </document>
